@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Bbfresh Kitchenette Seafood">
+    <meta property="og:description" content="Discover a world of fresh and flavorful seafood at Bbfresh Kitchenette. From succulent shrimp to premium crab, we offer the finest catch from the ocean. Explore our menu now!">
+    <meta property="og:image" content="url_to_your_seafood_image.jpg">
+    <meta property="og:url" content="https://www.yourseafoodcompany.com">
+    <meta property="og:type" content="website" />
+
+    <meta name="description" content="Discover a world of fresh and flavorful seafood at Bbfresh Kitchenette. From succulent shrimp to premium crab, we offer the finest catch from the ocean. Explore our menu now!">
+    <meta name="keywords" content="Sea snails, calamari, Red snapper, shinny nose, barracuda, mix-fish, croaker, shark, turkey, chicken, shrimp, crab, lobster">
+    <meta name="author" content="Olajide Olalekan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <!-- swiper.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    
+    <link rel="icon" type="image/x-icon" href="./images/brand_logo.JPG">
+    <title>Bbfresh Kitchenette Seafood</title>
+</head>
+<body>
+
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="brand-name-logo">
+                <img class="brand-logo" src="./images/brand_logo.JPG" alt="Brand logo">
+                <h1 class="brand-name">Bbfresh Kitchenette</h1>
+            </div>
+            
+            
+            <div class="search-menu-container">
+            
+                <svg class="search-icon hidden" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"
+                    fill="white">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+            
+                <!-- nav items -->
+                <nav class="navigation">
+                    <ul class="nav-lists" id="nav-lists">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#blog">Blog <small>(coming soon)</small></a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            
+            
+            
+                <!-- theme toggle -->
+            
+                <div class="theme-navigator-container">
+                    <input type="checkbox" class="checkbox" id="chk" aria-label="checkbox" />
+                    <label  class="label" for="chk">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10" width="10" fill="gold"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="10" width="10" fill="orange"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" />
+                        </svg>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            
+                <!-- theme toggle -->
+            
+                <svg class="menu-icon" id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960"
+                    width="30" fill="white">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            
+                <!-- menu drop down -->
+                <div class="menu-dropdown">
+                    <button class="x-icon" id="x-icon" aria-label="Close-button">
+                        <svg  xmlns="http://www.w3.org/2000/svg" fill="orange" height="30" width="30"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                        </svg>
+                    </button>
+                    
+            
+            
+                    <ul class="dropdown-lists" id="dropdown-lists">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#blog">Blog <small>(coming soon)</small></a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+            
+                </div>
+            </div>
+
+        </div>
+       
+        
+        
+        
+
+    </header>
+
+    <main>
+
+      
+
+        <div class="ad-image">
+            <img src="./images/ad-image.JPG" alt="fish varieties">
+        </div>
+
+        <div id="about" class="introductory-text">
+            <p>Welcome to Bbfresh Kitchenette <br>
+                your seafood sanctuary! 
+                Immerse yourself in a symphony of oceanic flavors with our 
+                meticulously curated menu. From succulent shrimp to buttery lobster, 
+                we serve the freshest, responsibly sourced seafood. Join us for an unforgettable 
+                dining experience where every dish reflects our passion for the sea. 
+                Welcome aboard! 🦞🌊 #SeafoodPerfection #FreshCatch</p>
+        </div>
+        <hr>
+
+        <h2 class="sc-h2">Seafood Collection</h2>
+
+        <section id="shop" class="seafood-collection">
+
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_11shrimp.jpg" alt="shrimp">
+
+                <div class="details-container">
+                    <p>shrimp</p>
+                    
+                </div>
+               
+            </div>
+
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_1crabs.jpg" alt="Crab">
+
+                <div class="details-container">
+                    <p>crab</p>
+                </div>
+               
+            </div>
+
+            <!-- <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_lobster.jpg" alt="Lobster">
+
+                <div class="details-container">
+                    <p>Lobster</p>
+                </div>
+               
+            </div> -->
+
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_barracuda.jpg" alt="Barracuda">
+
+                <div class="details-container">
+                    <p>Barracuda</p>
+                    
+                </div>
+               
+            </div>
+
+            
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_calamari.jpg" alt="Calamari">
+
+                <div class="details-container">
+                    <p>Calamari</p>
+                    
+                </div>
+               
+            </div>
+
+            
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_moonfish.jpg" alt="Moon fish">
+
+                <div class="details-container">
+                    <p>Moon fish</p>
+                    
+                </div>
+               
+            </div>
+
+<!--             
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/gizzard.jpg" alt="Gizzard">
+
+                <div class="details-container">
+                    <p>Gizzard</p>
+                    
+                </div>
+               
+            </div> -->
+
+            
+            <!-- <div class="container-card">
+                <img class="img-collection-size" src="./images/turkey.jpg" alt="Turkey">
+
+                <div class="details-container">
+                    <p>Turkey</p>
+                    
+                </div>
+               
+            </div> -->
+
+            
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/titus_sardines.jpg" alt="Sardine">
+
+                <div class="details-container">
+                    <p>Sardine</p>
+                    
+                </div>
+               
+            </div>
+
+            
+            <div class="container-card">
+                <img class="img-collection-size" src="./images/rsz_1rsz_stingray.jpg" alt="Stingray">
+
+                <div class="details-container">
+                    <p>Stingray</p>
+                    
+                </div>
+               
+            </div>
+        </section>
+
+        <!--section 2-->
+        <section class="about-section">
+            <h2>Healthy for the Environment and Your Taste Buds</h2>
+
+            <div class="about1">
+                <b>GENUINELY DELICIOUS</b>
+                <p>We provide premium seafood, such as  crab, shrimp , stingray, 
+                    and lobster, simply delivered right to your house.
+                </p>
+            </div>
+
+            <div class="about2">
+                <b>WHAT MAKES US UNIQUE</b>
+                <p class="sub-about">Seafood stays clean and safe when it is deep-frozen at its freshest. 
+                    It is difficult for consumers to determine whether the seafood they are purchasing 
+                    was ethically harvested, prepared, and preserved 
+                    because supermarket stores label previously frozen and refrozen fish as "fresh" 
+                    without making any distinctions or providing expiration dates.
+                </p>
+
+                <b>All of the seafood from BbfreshSeafood has only ever been frozen once, we guarantee it!</b>
+            </div>
+        </section>
+
+<!-- 
+        section 3 -->
+        <section class="review-section">
+            
+            <!-- Slider main container -->
+            <div class="testimonial mySwiper">
+                <h2>What Our Clients Say</h2>
+
+                <!-- Additional required wrapper -->
+                <div class="testi-content swiper-wrapper"> 
+
+                    <!-- Slides -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/rsz_mixed fish.jpg" alt="" class="image" />
+                        <p> <i class='bx bxs-quote-left quote-icon'></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                            saepe provident dolorem a quaerat quo error facere nihil deleniti
+                            eligendi ipsum adipisci, fugit, architecto amet asperiores
+                            doloremque deserunt eum nemo.
+                            <i class='bx bxs-quote-right quote-icon'></i>
+                        </p>
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/rsz_moonfish.jpg" alt="" class="image" />
+                        <p> <i class='bx bxs-quote-left quote-icon'></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                            saepe provident dolorem a quaerat quo error facere nihil deleniti
+                            eligendi ipsum adipisci, fugit, architecto amet asperiores
+                            doloremque deserunt eum nemo.
+                            <i class='bx bxs-quote-right quote-icon'></i>
+                        </p>
+                        <div class="details">
+                            <span class="name"> Lotter</span>
+                        </div>
+                    </div>
+
+                    <!-- slide 3 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/rsz_calamari.jpg" alt="" class="image" />
+                        <p> <i class='bx bxs-quote-left quote-icon'></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                            saepe provident dolorem a quaerat quo error facere nihil deleniti
+                            eligendi ipsum adipisci, fugit, architecto amet asperiores
+                            doloremque deserunt eum nemo.
+                            <i class='bx bxs-quote-right quote-icon'></i>
+                        </p>
+                        <div class="details">
+                            <span class="name">Maaaaaaaa</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <!-- navigation buttons -->
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+            
+            </div>
+                 
+        </section>
+
+
+
+
+
+
+
+
+        <!-- section 4 -->
+
+        <section class="sign-up-container">
+        
+            <!--form validation-->
+            <br>
+            <br>
+           <div class="form-container">
+            <form id="form"  action="" method="post" >
+                <div class="input-control">
+                    <label for="email">Email address</label><span class="error"></span>
+                    <br>
+                    <input class="email-input" autocomplete="on" type="email" id="email" placeholder="Enter email address" name="email" aria-labelledby="email" required />
+                    <div class="subscribe-div"><button  id="submit-button" type="button">Subscribe to our monthly newsletter</button></div>
+                </div>
+                </form>
+           </div>
+                 <!-- Sign-up form end -->
+          </section>
+
+          <!-- section 5 -->
+            <!-- Success message start -->
+            <div class="success-container hidden">
+                <img src="images/icon-success.svg" alt="">
+                <h1>Thanks for <br>subscribing!</h1>
+                <br>
+                <p>A confirmation email has been sent to <b class="success-state">ash@loremcompany.com.</b>
+                Please open it and click the button inside to confirm your subscription.</p>
+                <br>
+                <br>
+                <button type="button" class="dismiss-btn">Dismiss message</button>
+            </div>
+    
+    <!-- Success message end -->
+
+
+
+
+
+
+
+        <!--section 6-->
+        <section id="contact" class="contact">
+
+
+
+
+            
+            <p>Contact Us</p>
+
+            <div id="profile-links" class="profile-links">
+                <a href="https://www.instagram.com/bbfreshkitchenette?utm_source=qr&igsh=dmNidTE1NXpibDR2" rel="noopener" id="profile-link-instagram" class="instagram" target="_blank" aria-label="Instagram link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#eb3c97" height="40" width="40" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/>
+                    </svg>
+                </a>
+
+                <a rel="noopener" id="profile-link-tiktok" class="tiktok" href="/" target="_blank"  aria-label="Tiktok link">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                </a>
+
+
+           
+                
+                <a href="mailto:bbfreshkitchenette4@gmail.com" rel="noopener" id="profile-link-email" class="email" target="_blank" aria-label="Email link" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#dc4c3f" height="40" width="40" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
+
+
+                <a rel="noopener"  id="profile-link-tel" class="tel" href="tel:08038244220" aria-label="telephone link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" height="40" width="40" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"/>
+                    </svg>
+                </a>
+                
+            </div>
+            <div class="shop-location">
+                
+               
+                <Address> <svg xmlns="http://www.w3.org/2000/svg" fill="orange" height="16" width="20" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M36.8 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V384 224H320V384H128V224H64zm448 0V480c0 17.7 14.3 32 32 32s32-14.3 32-32V224H512z"/></svg> Address: Railway Shopping Complex Plot 6, Lebanon Road, Alalubosa G.R.A, Ibadan.</Address>
+                <iframe title="ShopLocation" id="map" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7913.425895703467!2d3.8675739873172086!3d7.386029920494364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398df1b6ac1829%3A0xa78bede0f57ae179!2sAlalubosa%20Lake%20Side%20Gra%20Estate%20Gate!5e0!3m2!1sen!2sng!4v1705063668332!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="opening-hrs">
+                <div class="time-svg"><svg stroke="currentColor" fill="orange" stroke-width="0" viewBox="0 0 16 16" height="70px" width="70px" xmlns="http://www.w3.org/2000/svg"><path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path><path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path><path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path></svg></div>
+                <p>Opening Hours
+                   <span>Mon - Sat(8 AM - 8 PM)</span>
+                   <span>Sunday - Closed</span>
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <!--  -->
+        
+
+<!--DEV SOCIAL PANEL START-->
+        <div class="social-panel-container">
+            <div class="social-panel">
+                <p>Developed by Ola</p>
+                <button class="close-btn" aria-label="Close-button"><i class="fas fa-times"></i></button>
+                <b>Get in touch on</b>
+                <ul>
+                    <li>
+                        <a href="https://discordapp.com/users/1146014671485272125" target="_blank" rel="noopener" aria-label="developer discord account">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/simonlexy_1805" target="_blank" rel="noopener" aria-label="developer twitter account">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="hidden">
+                        <a href="https://linkedin.com/in/" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                         
+                        <a href="mailto:Olaleksi4231@gmail.com" rel="noopener" target="_blank" aria-label="developer email account">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#040810" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a  href="tel:09032697745" rel="noopener" target="_blank" aria-label="developer contact number">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#040810" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        </a>
+                    </li>
+            
+                
+                </ul>
+            </div>
+        </div>
+        <button id="floating-btn" class="floating-btn animate__animated animate__bounce animate__delay-4s animate__repeat-3">
+            Get in Touch
+        </button>
+
+        <!-- DEV SOCIAL PANEL END  -->
+
+
+          <!--footer scetion-->
+          <footer class="footer">
+           
+            <p>&copy; 2024 BbfreshSeafood All Rights Reserved.</p>
+         </footer>
+
+         <!-- top button -->
+         <div id="progress">
+            <i class='bx bxs-chevron-up' id="progress-value"></i>
+          </div>
+         <!-- top button end -->
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+    
+  
+    
+</body>
+</html>
+
