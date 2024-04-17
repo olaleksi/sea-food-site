@@ -261,12 +261,21 @@ a.active::after{
 
 
 .seafood-collection {
-  display: flex;
+/*   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 10px; */
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
+  gap: 8px;
+  grid-auto-flow: dense;
   padding: 10px;
+  justify-content: space-around;
+  align-content: center;
 
 }
 
