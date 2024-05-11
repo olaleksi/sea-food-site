@@ -23,10 +23,17 @@
 
     body {
         font-family: 'Inter', sans-serif;
-        background-color: #f6f5f7;
+        background-color: #e0e0e0;
         color: #000;
         /* background-color: #0d0d0d; */
         transition: 0.2s linear;
+    }
+
+    .header{
+        width: 100%;
+        min-width: 430px;
+        position: fixed;
+        z-index: 20;
     }
 
     /* theme toggle styling */
@@ -74,6 +81,8 @@
 
     /* theme toggle styling end */
 
+    
+
     .introductory-text {
         padding-top: 10px;
         text-align: center;
@@ -81,14 +90,19 @@
         padding-left: 30px;
         padding-bottom: 10px;
         font-family: 'poppins';
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.8;
+        margin-top: 10%;
+        margin-bottom: 19%;
+        width: 100%;
+        /* margin: 0 auto; */
     }
 
     .sc-h2 {
         margin-top: 20px;
         font-family: 'Poppins';
         text-align: center;
+        font-size: 2rem;
     }
 
     .header-content {
@@ -107,8 +121,8 @@
     }
 
     main {
-        width: 430px;
-        max-width: 100%;
+        width: 100%;
+        min-width: 430px;
         /* background-color: #0d0d0d; */
     }
 
@@ -145,15 +159,16 @@
     .menu-dropdown {
         display: none;
         background: #0d0d0d;
-        position: absolute;
-        padding: 12px;
-        top: -25px;
-        width: 100vw;
-        height: 100vh;
-        right: -10px;
-        text-align: center;
-        font-size: 2rem;
-        opacity: 0.9;
+            position: absolute;
+            padding: 12px;
+            top: -20px;
+            width: 100%;
+            min-width: 430px;
+            height: 114vh;
+            right: -10px;
+            text-align: center;
+            font-size: 2rem;
+            opacity: 0.9;
         /* margin: 0 -20px; */
     }
 
@@ -257,6 +272,7 @@
         padding: 10px;
         justify-content: space-between;
         align-content: center;
+        width:90%;
 
 
 
@@ -301,42 +317,79 @@
     }
 
     .about-section {
-        text-align: center;
-        padding: 20px;
-        /* background-color: #0d0d0d; */
+        padding: 50px;
         font-family: 'Poppins';
-        line-height: 1.7;
+        line-height: 1.8;
+        width: 100%;
+        margin: 0 auto;
+        /* text-align: center;
+        padding: 20px;
+       
+        font-family: 'Poppins';
+        line-height: 1.8;
+        margin-top: 10%; */
     }
 
-    .about1 {
+        .about-section>h2 {
+            font-size: 1.6rem;
+        }
+    
+        .about1,
+        .about2>b {
+            font-size: 1rem;
+            padding: 40px 0px;
+        }
+
+    /* .about1 {
         padding: 20px;
     }
 
     .about2 {
         padding: 18px;
-    }
+    } */
 
     .sub-about {
         padding-bottom: 20px;
+        font-size: 1rem;
     }
 
+    .wrapper{
+        max-width: 400px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .wrapper .text{
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
     .contact {
 
         padding: 15px;
+        width: 100%;
+        margin: 0;
 
     }
 
     .contact>p {
         text-align: center;
-        margin-bottom: 10px;
-        font-weight: 700;
+            margin-bottom: 10%;
+            margin-top: 10%;
+            font-weight: 700;
+    }
+
+    address{
+        font-size: 1.2rem;
     }
 
     .profile-links {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-top: 15px;
+        margin-bottom: 15%;
     }
 
     .shop-location {
@@ -357,10 +410,11 @@
     .opening-hrs {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
-        padding: 20px 0px;
+        padding: 0px 0px;
+        margin-top: 15%;
     }
 
     .opening-hrs>p {
@@ -368,6 +422,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 6px;
+        font-size: 1.2rem;
 
     }
 
@@ -381,7 +436,7 @@
         font-weight: bold;
         padding: 20px;
         margin-bottom: 75px;
-        font-size: 14px;
+        font-size: 1.1rem;
     }
 
 
@@ -392,10 +447,13 @@
       background-color: #e3f2fd;
     } */
 
+    .review-section {
+        width: 100%;
+        margin: 10% auto;
+    }
     .testimonial {
         position: relative;
-        background: #b7e0fe;
-        color: #292C35;
+       
         /* max-width: 900px; */
         width: 100%;
         padding: 50px 0;
@@ -407,6 +465,7 @@
         text-align: center;
         margin-bottom: 20px;
         margin-top: -30px;
+        font-size: 1.4rem;
     }
 
     .testimonial .image {
@@ -441,6 +500,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -18px;
     }
 
     .details .name {
@@ -471,6 +531,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 4%;
+    }
+
+    .first-review.swiper-pagination{
+        margin-bottom: 0%;
     }
 
     .swiper-pagination-bullet {
