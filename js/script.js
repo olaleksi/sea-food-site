@@ -1,16 +1,17 @@
-const email = document.getElementById('email');
-const submit = document.getElementById('submit-button');
-const form = document.getElementById('form');
-const signUpContainer = document.querySelector('.sign-up-container');
-const successContainer = document.querySelector('.success-container');
-const dismissBtn = document.querySelector('.dismiss-btn');
-const submittedEmail = document.querySelector('.success-state');
-const inputControl = document.querySelector('.input-control');
-const errorDisplay = inputControl.querySelector('.error');
+// const email = document.getElementById('email');
+// const submit = document.getElementById('submit-button');
+// const form = document.getElementById('form');
+// const signUpContainer = document.querySelector('.sign-up-container');
+// const successContainer = document.querySelector('.success-container');
+// const dismissBtn = document.querySelector('.dismiss-btn');
+// const submittedEmail = document.querySelector('.success-state');
+// const inputControl = document.querySelector('.input-control');
+// const errorDisplay = inputControl.querySelector('.error');
 const menuIcon = document.getElementById('menu-icon');
 const menuDropdown = document.querySelector('.menu-dropdown');
 const dropdownLists = document.querySelector('.dropdown-lists')
 const xIcon = document.querySelector('#x-icon');
+const reviewSection = document.querySelector('.review-section');
 var SHOW_CLASS = 'active';
 const chk = document.querySelector('#chk');
 
@@ -37,7 +38,8 @@ window.onload = navigationMenu();
 //toggle theme function 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
-   
+    reviewSection.classList.toggle('dark');
+    
 
 });
 
@@ -68,51 +70,8 @@ xIcon.addEventListener('click', ()=>{
 
 
 
-//validated email
-const isValidEmail = (email) => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
 
 
-function togglecards(){
-    signUpContainer.classList.toggle('hidden');
-    successContainer.classList.toggle('hidden');
-    email.value = '';
-    inputControl.classList.remove('success');
-}
-
-
-submit.addEventListener('click', submitEmail);
-dismissBtn.addEventListener('click', togglecards);
-
-
-function submitEmail(e){
-    e.preventDefault()
-
-    emailValue = email.value.trim();
-
-    if (emailValue === ''){
-        errorDisplay.innerText = 'Email is required';
-        inputControl.classList.add('error');
-        inputControl.classList.remove('success');
-    }else if (!isValidEmail(emailValue)){
-        errorDisplay.innerText = "Provide a valid email address";
-        inputControl.classList.add('error');
-        inputControl.classList.remove('success');
-    } else {
-        errorDisplay.innerText = '';
-        inputControl.classList.add('success');
-        inputControl.classList.remove('error');
-        submittedEmail.innerText = emailValue;
-        
-        togglecards();
-        
-        
-    }
-        
-
-    }
 
 
 
@@ -171,11 +130,13 @@ let calcScrollValue = () => {
 
 
 
-//swiper function
  var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      grabCursor: true,
-      loop: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
